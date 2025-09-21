@@ -11,15 +11,15 @@ const Footer: React.FC = () => (
     <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Social Media Icons */}
         <div className="flex space-x-4">            
-        <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
-            <Instagram size={16} />
-        </a>
-        <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
-            <Youtube size={16} />
-        </a>            
-        <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
-            <Linkedin size={16} />
-        </a>
+            <a href="https://www.instagram.com/institutoinmag/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">
+                <Instagram size={16} />
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">
+                <Youtube size={16} />
+            </a>            
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-600 transition-colors">
+                <Linkedin size={16} />
+            </a>
         </div>
     </div>
 

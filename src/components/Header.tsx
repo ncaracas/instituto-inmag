@@ -9,13 +9,13 @@ const Header: React.FC = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Social Media Icons */}
           <div className="flex space-x-4">            
-            <a href="#" className="text-gray-300 hover:text-blue-600 transition-colors">
+            <a href="https://www.instagram.com/institutoinmag/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-600 transition-colors">
               <Instagram size={19} />
             </a>
-            <a href="#" className="text-gray-300 hover:text-blue-600 transition-colors">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-600 transition-colors">
               <Youtube size={19} />
             </a>            
-            <a href="#" className="text-gray-300 hover:text-blue-600 transition-colors">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-600 transition-colors">
               <Linkedin size={19} />
             </a>
           </div>
