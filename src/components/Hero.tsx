@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <main className="pt-40 pb-12 px-4">
+    <main className="bg-zinc-800 pt-40 pb-12 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Welcome section */}
         <div className="text-center mb-8">
@@ -44,13 +44,64 @@ const Hero: React.FC = () => {
         </div>
 
         {/* About Resumen */}
-        <div className="text-center mt-16">
-          <h1 className="text-3xl font-bold text-yellow-600 mb-6">
+        <div className="text-center mt-16 mb-14">
+          <h1 className="text-3xl font-bold text-amber-400 mb-6">
             INSTITUTO INMAG DE FORMAÇÃO, CULTURA E INCLUSÃO 
           </h1>
           <p className="text-lg text-gray-300 text-justify max-w-7xl mx-auto leading-relaxed">
             O Instituto INMAG de Formação, Cultura e Inclusão é uma organização da sociedade civil sem fins lucrativos, criada com o propósito de promover o acesso à educação, à cultura e às oportunidades profissionais por meio de ações formativas, projetos culturais, eventos e iniciativas voltadas à economia criativa. Com foco na diversidade, sustentabilidade e inovação, o Instituto atua na capacitação de jovens e adultos, no fortalecimento de territórios criativos e na valorização das expressões artísticas e culturais locais, contribuindo para o desenvolvimento social e econômico de comunidades.
           </p>
+        </div>
+
+        {/* Thematic Navigation Section */}
+        <div className="bg-amber-400/50 py-8 rounded-2xl p-10 backdrop-blur-sm border border--400">
+          <div max-w-7xl mx-auto >
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              {/* Title */}
+              <div className="flex items-center space-x-2">              
+                <span className="text-white text-xl font-bold">CONHEÇA NOSSAS AÇÕES<br />TAMBÉM POR TEMAS:</span>
+              </div>
+
+              {/* Navigation Links */}              
+              <nav className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
+                <a href="#" className="text-white text-2xl hover:text-amber-400 transition-colors font-bold">
+                  #MODA
+                </a>
+                <a href="#" className="text-white text-2xl hover:text-amber-400 transition-colors font-bold">
+                  #ARTE
+                </a>
+                <a href="#" className="text-white text-2xl hover:text-amber-400 transition-colors font-bold">
+                  #CULTURA
+                </a>
+                <a href="#" className="text-white text-2xl hover:text-amber-400 transition-colors font-bold">
+                  #SOLIDARIEDADE
+                </a>            
+              </nav>
+            </div>
+          </div>           
+        </div>
+
+        {/* Sustainable Development Section */}
+        <div className="max-w-7xl mx-auto mt-16 mb-16 px-4">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+            {/* Coluna Esquerda: Título e Descrição */}
+            <div className="w-full md:w-2/5 text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-4">
+                Desenvolvimento Sustentável
+              </h2>
+              <p className="text-lg text-gray-300 mb-6">
+                O Instituto INMAG busca contribuir para avanços na agenda global dos Objetivos de Desenvolvimento Sustentável da ONU para 2030.
+              </p>
+            </div>
+            {/* Coluna Direita: Imagem */}  
+            <div className="w-full md:w-3/5 flex justify-center md:justify-end">
+              <img
+                src={"https://res.cloudinary.com/dzjcmsdwk/image/upload/v1758377113/ODS_gq8kek.png"}
+                alt="objetivos ONU"                
+                className="shadow-lg w-full max-w-max object-cover"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Call to action section */}
@@ -73,59 +124,10 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <div className="bg-yellow-600/50 py-8 rounded-2xl p-10 backdrop-blur-sm border border-yellow-400">
-          <div max-w-7xl mx-auto >
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              {/* Title */}
-              <div className="flex items-center space-x-2">              
-                <span className="text-white text-xl font-bold">CONHEÇA NOSSAS AÇÕES<br />TAMBÉM POR TEMAS:</span>
-              </div>
-
-              {/* Navigation Links */}              
-              <nav className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
-                <a href="#" className="text-white text-2xl hover:text-yellow-400 transition-colors font-bold">
-                  #MODA
-                </a>
-                <a href="#" className="text-white text-2xl hover:text-yellow-400 transition-colors font-bold">
-                  #ARTE
-                </a>
-                <a href="#" className="text-white text-2xl hover:text-yellow-400 transition-colors font-bold">
-                  #CULTURA
-                </a>
-                <a href="#" className="text-white text-2xl hover:text-yellow-400 transition-colors font-bold">
-                  #SOLIDARIEDADE
-                </a>            
-              </nav>
-            </div>
-          </div>           
-        </div>
-
-        <div className="max-w-7xl mx-auto mt-16 mb-16 px-4">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
-            {/* Coluna Esquerda: Título e Descrição */}
-            <div className="w-full md:w-2/5 text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl font-bold text-yellow-600 mb-4">
-                Desenvolvimento Sustentável
-              </h2>
-              <p className="text-lg text-gray-300 mb-6">
-                O Instituto INMAG busca contribuir para avanços na agenda global dos Objetivos de Desenvolvimento Sustentável da ONU para 2030.
-              </p>
-            </div>
-            {/* Coluna Direita: Imagem */}  
-            <div className="w-full md:w-3/5 flex justify-center md:justify-end">
-              <img
-                src={"https://res.cloudinary.com/dzjcmsdwk/image/upload/v1758378162/objetivos_onu_zkb1ph.png"}
-                alt="objetivos ONU"                
-                className="shadow-lg w-full max-w-max object-cover"
-              />
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Footer */}
-      <footer className="flex flex-col justify-center bg-gray-900 py-4">
+      <footer className="flex flex-col justify-center bg-zinc-800 py-4">
         <div className='flex justify-center mb-2 mt-4'>
           <img src={"https://res.cloudinary.com/dzjcmsdwk/image/upload/v1758377109/LOGOTIPO_INSTITUTO_INMAG_BC_Prancheta_1_c%C3%B3pia_kdreun.png"} alt="Logo Instituto INMAG" className="w-9.4 h-16" />
         </div>
