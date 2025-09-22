@@ -4,17 +4,17 @@ import Card from './Card';
 const Hero: React.FC = () => {
   const cards = [
     {
-      image: "https://images.pexels.com/photos/13729108/pexels-photo-13729108.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://res.cloudinary.com/dzjcmsdwk/image/upload/v1758560837/imagemmoda_vfthyz.png?auto=compress&cs=tinysrgb&w=800", 
       title: "MODA",
       description: "O Núcleo de Moda do Instituto INMAG é um espaço de formação, criação e experimentação voltado para jovens em situação de vulnerabilidade social, com foco no desenvolvimento de competências criativas, técnicas e empreendedoras."
     },
     {
-      image: "https://images.pexels.com/photos/9227529/pexels-photo-9227529.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://res.cloudinary.com/dzjcmsdwk/image/upload/v1758560837/saudemental_fsbafl.jpg?auto=compress&cs=tinysrgb&w=800",
       title: "SAÚDE MENTAL",
       description: "O Núcleo de Saúde Mental do Instituto INMAG é um espaço dedicado ao cuidado integral das pessoas, com foco na promoção da saúde emocional, acolhimento psicológico e fortalecimento dos vínculos sociais."
     },
     {
-      image: "https://images.pexels.com/photos/8436491/pexels-photo-8436491.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://res.cloudinary.com/dzjcmsdwk/image/upload/v1758561317/socialcultural_d0yv7n.jpg?auto=compress&cs=tinysrgb&w=800",
       title: "SOCIAL E CULTURAL",
       description: "O Núcleo Social e Cultural do Instituto INMAG promoverá o acesso à cidadania, à cultura e ao fortalecimento comunitário por meio de oficinas artísticas, rodas de conversa, formações e ações de mobilização."
     }
