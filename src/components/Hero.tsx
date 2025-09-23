@@ -23,15 +23,8 @@ const Hero: React.FC = () => {
   return (
     <main className="bg-zinc-800 pt-40 pb-12 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Welcome section */}
-        <div className="text-center mb-8">
-          <h1 className="text-5xl font-bold text-white py-3">
-            Transformando Vidas, Construindo Futuros
-          </h1>          
-        </div>
-
         {/* Cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
           {cards.map((card, index) => (
             <Card 
               key={index}
@@ -40,16 +33,23 @@ const Hero: React.FC = () => {
               description={card.description}
             />
           ))}
-        </div>
+        </div>        
 
         {/* About Resumen */}
-        <div className="text-center mt-16 mb-14">
+        <div className="text-center mt-16 mb-10">
           <h1 className="text-3xl font-bold text-amber-400 mb-6">
             INSTITUTO INMAG DE FORMAÇÃO, CULTURA E INCLUSÃO 
           </h1>
           <p className="text-lg text-gray-300 text-justify max-w-7xl mx-auto leading-relaxed">
             O Instituto INMAG de Formação, Cultura e Inclusão é uma organização da sociedade civil sem fins lucrativos, criada com o propósito de promover o acesso à educação, à cultura e às oportunidades profissionais por meio de ações formativas, projetos culturais, eventos e iniciativas voltadas à economia criativa. Com foco na diversidade, sustentabilidade e inovação, o Instituto atua na capacitação de jovens e adultos, no fortalecimento de territórios criativos e na valorização das expressões artísticas e culturais locais, contribuindo para o desenvolvimento social e econômico de comunidades.
           </p>
+        </div>
+
+        {/* Short slogan */}
+        <div className="text-center mt-16 mb-10">
+          <h1 className="text-5xl font-bold text-white py-3">
+            Transformando Vidas, Construindo Futuros
+          </h1>          
         </div>
 
         {/* Thematic Navigation Section */}
@@ -105,19 +105,19 @@ const Hero: React.FC = () => {
 
         {/* Call to action section */}
         <div className="text-center mt-14">
-          <div className="bg-gray-800/50 rounded-2xl p-12 backdrop-blur-sm border border-gray-700">
-            <h2 className="text-3xl font-bold text-white mb-6">
+          <div className="bg-zinc-800 rounded-2xl p-12 backdrop-blur-sm border border-amber-400">
+            <h2 className="text-3xl font-bold text-amber-400 mb-6">
               Faça Parte Desta Transformação
             </h2>
-            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
               Sua contribuição faz a diferença na vida de milhares de pessoas. 
               Junte-se a nós nessa missão de construir um mundo mais justo e solidário.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition-colors text-lg">
+              <button className="bg-zinc-800/50 hover:bg-zinc-900 text-white font-bold py-4 px-8 border border-gray-200 rounded-full transition-colors text-lg">
                 Conhecer Nossos Projetos
               </button>
-              <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full transition-colors text-lg">
+              <button className="bg-amber-400 hover:bg-amber-500 text-zinc-800 font-bold py-4 px-8 rounded-full transition-colors text-lg">
                 Fazer uma Doação
               </button>
             </div>
