@@ -31,7 +31,7 @@ const Header: React.FC = () => {
             </a>
             <a 
               href="#" 
-              className="flex items-center space-x-1 bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded-full transition-colors text-sm font-medium"
+              className="flex items-center space-x-1 bg-amber-400 hover:bg-amber-500 text-zinc-800 px-3 py-1 rounded-full transition-colors text-sm font-medium"
             >
               <image  />
               <span>PARA DOAR</span>
