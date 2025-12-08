@@ -6,6 +6,7 @@ const Footer: React.FC = () => (
         <img src={"https://res.cloudinary.com/dzjcmsdwk/image/upload/v1758377109/LOGOTIPO_INSTITUTO_INMAG_BC_Prancheta_1_c%C3%B3pia_kdreun.png"} alt="Logo Instituto INMAG" className="w-9.4 h-16" />
     </div>
 
+    <p className='text-xs text-gray-400 text-center mt-0 mb-2'>CNPJ: 62.769.465/0001-69</p>
     <p className='text-xs text-gray-400 text-center mt-2 mb-2'>ACOMPANHE-NOS NAS REDES SOCIAIS</p>
 
     <div className="max-w-7xl mx-auto flex justify-between items-center">
