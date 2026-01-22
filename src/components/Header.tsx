@@ -64,12 +64,12 @@ const Header: React.FC = () => {
           
           {/* Desktop Navigation Links (Escondido em Mobile) */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-white hover:text-blue-400 transition-colors font-medium">
+            <Link to="/" className="text-white hover:text-blue-400 transition-colors font-medium">
               HOME
             </a>            
             <a href="#" className="text-gray-300 hover:text-white transition-colors font-medium">
               PARCERIAS E PROJETOS
-            </a>
+            </Link>
             <a href="#" className="text-gray-300 hover:text-white transition-colors font-medium">
               QUEM SOMOS
             </a>

@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../components/Card';
 
-const Hero: React.FC = () => {
+const Home: React.FC = () => {
   const cards = [
     {
       image: "https://res.cloudinary.com/dzjcmsdwk/image/upload/v1769059358/IMG_9276_jmc4v5.jpg?auto=compress&cs=tinysrgb&w=800", 
@@ -140,4 +140,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Home;
