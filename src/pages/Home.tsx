@@ -4,7 +4,7 @@ import Card from '../components/Card';
 const Home: React.FC = () => {
   const cards = [
     {
-      image: "https://res.cloudinary.com/dzjcmsdwk/image/upload/v1769059358/IMG_9276_jmc4v5.jpg?auto=compress&cs=tinysrgb&w=800", 
+      image: "https://res.cloudinary.com/dzjcmsdwk/image/upload/v1769106809/IMG_9276_uj1jiw.jpg", 
       title: "MODA",
       description: "O Núcleo de Moda do Instituto INMAG é um espaço de formação, criação e experimentação voltado para jovens em situação de vulnerabilidade social, com foco no desenvolvimento de competências criativas, técnicas e empreendedoras."
     },
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       description: "O Núcleo de Saúde Mental do Instituto INMAG é um espaço dedicado ao cuidado integral das pessoas, com foco na promoção da saúde emocional, acolhimento psicológico e fortalecimento dos vínculos sociais."
     },
     {
-      image: "https://res.cloudinary.com/dzjcmsdwk/image/upload/v1769059324/IMG_8353.jpg_uav7oy.jpg?auto=compress&cs=tinysrgb&w=800",      
+      image: "https://res.cloudinary.com/dzjcmsdwk/image/upload/v1769106808/IMG_8353_qxi4rr.jpg",
       title: "SOCIAL E CULTURAL",
       description: "O Núcleo Social e Cultural do Instituto INMAG promoverá o acesso à cidadania, à cultura e ao fortalecimento comunitário por meio de oficinas artísticas, rodas de conversa, formações e ações de mobilização."
     }
@@ -25,9 +25,8 @@ const Home: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* Cards grid */}
-        {/* Ajuste: gap menor no mobile (gap-6) e maior no desktop (gap-8) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4">
-          {cards.map((card, index) => (
+          {cards.map((card, index) => (            
             <Card 
               key={index}
               image={card.image}
