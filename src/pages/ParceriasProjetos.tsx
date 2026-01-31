@@ -14,7 +14,7 @@ const ParceriasProjetos: React.FC = () => {
       position: "object-center",
     },
     {
-      url: "https://res.cloudinary.com/dzjcmsdwk/image/upload/v1769139262/IMG_9333_v7zzaq.jpg",
+      url: "https://res.cloudinary.com/dzjcmsdwk/image/upload/v1769799270/IMG_9333__e4fglf.jpg",
       position: "object-center",
     },
     {
