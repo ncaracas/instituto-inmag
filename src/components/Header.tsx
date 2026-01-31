@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // Adicionei 'Menu' e 'X' nas importações do lucide-react para os ícones
 import { Instagram, Youtube, Linkedin, FileText, Menu, X } from 'lucide-react';
 
@@ -64,12 +64,12 @@ const Header: React.FC = () => {
           
           {/* Desktop Navigation Links (Escondido em Mobile) */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-white hover:text-blue-400 transition-colors font-medium">
+            <Link to="/" className="text-white hover:text-blue-400 transition-colors font-medium">
               HOME
-            </a>            
-            <a href="#" className="text-gray-300 hover:text-white transition-colors font-medium">
+            </Link>
+            <Link to="/parcerias-projetos" className="text-gray-300 hover:text-white transition-colors font-medium">
               PARCERIAS E PROJETOS
-            </a>
+            </Link>
             <a href="#" className="text-gray-300 hover:text-white transition-colors font-medium">
               QUEM SOMOS
             </a>
@@ -97,20 +97,20 @@ const Header: React.FC = () => {
         <div className="md:hidden bg-zinc-800 border-t border-gray-700 absolute w-full left-0 shadow-xl">
           <nav className="flex flex-col px-4 pt-2 pb-6 space-y-4">
             {/* O onClick={toggleMenu} serve para fechar o menu assim que o usuário clica num link */}
-            <a 
-              href="#"               
+            <Link 
+              to="/"              
               onClick={toggleMenu}
               className="text-white hover:text-amber-400 font-medium border-b border-gray-700 pb-2"
             >
               HOME
-            </a>            
-            <a 
-              href="#" 
+            </Link>            
+            <Link 
+              to="/parcerias-projetos" 
               onClick={toggleMenu}
               className="text-gray-300 hover:text-amber-400 font-medium border-b border-gray-700 pb-2"
             >
               PARCERIAS E PROJETOS
-            </a>
+            </Link>
             <a 
               href="#" 
               onClick={toggleMenu}
